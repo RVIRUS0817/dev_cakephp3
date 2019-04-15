@@ -1,0 +1,22 @@
+
+  nginx:
+    build: ./nginx/
+    ports:
+      - 8080:80
+    links:
+      - phpfpm
+    volumes:
+      - ../cakephp3/cakephp:/var/www/html/cakephp3
+
+  phpfpm:
+    build: ./phpfpm/
+    links:
+      - mysql
+    volumes:
+      - ../cakephp3/cakephp:/var/www/html/cakephp3
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: my_app
+      MYSQL_ROOT_PASSWORD: test

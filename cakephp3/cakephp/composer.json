@@ -1,0 +1,4 @@
+"require": {
+    "cakephp/cakephp": "3.7.*"
+}
+
