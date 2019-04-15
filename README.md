@@ -49,9 +49,34 @@ $ docker exec -it docker_phpfpm_1 sh
 # Vendor/bin/cake bake project /var/www/html/cakephp3
 # composer create-project --prefer-dist cakephp/app my_app
 ```
+- change database
+
+```
+$ cd cakephp3.7/cakephp3/cakephp/config
+$ vim app.php
+
+    'Datasources' => [
+        'default' => [
+            'className' => 'Cake\Database\Connection',
+            'driver' => 'Cake\Database\Driver\Mysql',
+            'persistent' => false,
+            'host' => 'mysql',
+            /*
+             * CakePHP will use the default DB port based on the driver selected
+             * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
+             * the following line and set the port accordingly
+             */
+            //'port' => 'non_standard_port_number',
+            'username' => 'root',
+            'password' => 'test',
+            'database' => 'my_app',
+
+```
 
 
 - accessl url
 
 http://localhost:8080/
+
+![スクリーンショット 2019-04-15 20 49 03](https://user-images.githubusercontent.com/5633085/56130583-49524a00-5fc0-11e9-872f-835d8b1704dc.png)
 
