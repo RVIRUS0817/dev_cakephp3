@@ -29,7 +29,12 @@ $ docker exec -it docker_phpfpm_1 sh
 # php composer-setup.php
 # php -r "unlink('composer-setup.php');"
 
-# php composer.phar create-project --prefer-dist cakephp/app my_app
+# php composer.phar create-project --prefer-dist cakephp/app cakephp
+# exit
+$ mv cakephp cakephp33
+$ mv cakephp33 ../
+$ rm -rf cakephp 
+$ mv cakephp33 cakephp
 ```
 
 
