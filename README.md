@@ -18,12 +18,6 @@ Please refer to 2 if you use it after the second time.
 ```
 fork my repository
 $ rm -rf cakephp3.7/cakephp3/cakephp/*
-$ vim cake3.7/cakephp3/cakephp/composer.json
-
-"require": {
-    "cakephp/cakephp": "3.7.*"
-}
-
 $ cd docker
 $ docker-compose build
 $ docker-compose up -d
