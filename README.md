@@ -47,7 +47,7 @@ $ docker-compose up -d
 $ docker exec -it docker_phpfpm_1 sh
 # cd /var/www/html/cakephp3
 # Vendor/bin/cake bake project /var/www/html/cakephp3
-# composer create-project --prefer-dist cakephp/app my_app
+# composer create-project --prefer-dist cakephp/app cakephp
 ```
 - change database
 
