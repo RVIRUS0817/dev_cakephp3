@@ -20,7 +20,7 @@ fork my repository
 $ rm -rf cakephp3.7/cakephp3/cakephp/*
 $ cd docker
 $ docker-compose up -d
-$ docker exec -it docker_phpfpm_1 sh
+$ docker exec -it cake3-phpfpm sh
 # cd /var/www/html/cakephp3
 
 # php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
