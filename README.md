@@ -19,7 +19,6 @@ Please refer to 2 if you use it after the second time.
 fork my repository
 $ rm -rf cakephp3.7/cakephp3/cakephp/*
 $ cd docker
-$ docker-compose build
 $ docker-compose up -d
 $ docker exec -it docker_phpfpm_1 sh
 # cd /var/www/html/cakephp3
@@ -47,7 +46,6 @@ $ docker-compose up -d
 $ docker exec -it docker_phpfpm_1 sh
 # cd /var/www/html/cakephp3
 # Vendor/bin/cake bake project /var/www/html/cakephp3
-# composer create-project --prefer-dist cakephp/app cakephp
 ```
 - change database
 
