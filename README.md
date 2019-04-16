@@ -35,18 +35,6 @@ $ mv cakephp33 ../
 $ rm -rf cakephp 
 $ mv cakephp33 cakephp
 ```
-
-
-- ② One that starts from the second time
-```
-fork my repository
-$ cd docker
-$ docker-compose build
-$ docker-compose up -d
-$ docker exec -it docker_phpfpm_1 sh
-# cd /var/www/html/cakephp3
-# Vendor/bin/cake bake project /var/www/html/cakephp3
-```
 - change database
 
 ```
@@ -71,6 +59,11 @@ $ vim app.php
 
 ```
 
+- ② One that starts from the second time
+```
+fork my repository
+$ docker-compose up -d
+```
 
 - accessl url
 
