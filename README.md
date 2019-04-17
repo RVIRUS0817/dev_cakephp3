@@ -64,6 +64,7 @@ $ vim app.php
 - ② One that starts from the second time
 ```
 fork my repository
+$ cd docker
 $ docker-compose up -d
 ```
 
