@@ -4,8 +4,10 @@
 
 tutorials
 
-- cakephp3.7
-- php7.2
+- CakePHP3.7
+- PHP7.2
+- Nginx 1.15.5
+- Mysql 5.7
 
 ## dev
 
