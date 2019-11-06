@@ -62,10 +62,11 @@ $ vim cakephp/config.app.php
             'database' => 'my_app',
 
 ```
-
+```
 $ cd ../docker
 $ docker-compose down
 $ docker-compose up -d
+```
 
 - ② One that starts from the second time
 ```
