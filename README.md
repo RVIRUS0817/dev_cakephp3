@@ -19,7 +19,8 @@ Please refer to 2 if you use it after the second time.
 
 ```
 fork my repository
-$ rm -rf cakephp3.7/cakephp3/cakephp/*
+$ cd cakephp3.7
+$ rm -rf cakephp3/cakephp/*
 $ cd docker
 $ docker-compose up -d
 $ docker exec -it cake3-phpfpm sh
@@ -32,6 +33,8 @@ $ docker exec -it cake3-phpfpm sh
 
 # php composer.phar create-project --prefer-dist cakephp/app cakephp
 # exit
+
+$ cd ../cakephp3/cakephp
 $ mv cakephp cakephp33
 $ mv cakephp33 ../
 $ rm -rf cakephp 
@@ -40,8 +43,7 @@ $ mv cakephp33 cakephp
 - change database
 
 ```
-$ cd cakephp3.7/cakephp3/cakephp/config
-$ vim app.php
+$ vim cakephp/config.app.php
 
     'Datasources' => [
         'default' => [
@@ -60,6 +62,10 @@ $ vim app.php
             'database' => 'my_app',
 
 ```
+
+$ cd ../docker
+$ docker-compose down
+$ docker-compose up -d
 
 - ② One that starts from the second time
 ```
